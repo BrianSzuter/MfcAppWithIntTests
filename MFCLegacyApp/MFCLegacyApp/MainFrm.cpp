@@ -38,6 +38,7 @@ CMainFrame::~CMainFrame()
 {
 }
 
+// Point of Interest: Overriding PostNcDestroy is necessary to shutdown the process after closing the window
 void CMainFrame::PostNcDestroy()
 {
 	PostQuitMessage(0);

@@ -31,6 +31,7 @@ END_MESSAGE_MAP()
 // CMFCLegacyAppView construction/destruction
 
 CMFCLegacyAppView::CMFCLegacyAppView()
+	: m_NumberOfSuccessfulPrints(0)
 {
 	// TODO: add construction code here
 
@@ -76,9 +77,23 @@ void CMFCLegacyAppView::OnBeginPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
 
 void CMFCLegacyAppView::OnEndPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
 {
-	// TODO: add cleanup after printing
+	RecordPrintingSuccess();
 }
 
+///////////////////////////////////////////////////////////////////////////////
+//
+// \brief Record a count of the number of successful prints from this view.
+//
+// Point of Interest:
+// Here, we have a method that is painful to test manually. This "logic" only gets
+// called after a print job. However, its logic is well isolated, so it is a great
+// candidate for unit testing.
+//
+///////////////////////////////////////////////////////////////////////////////
+void CMFCLegacyAppView::RecordPrintingSuccess()
+{
+	m_NumberOfSuccessfulPrints++;
+}
 
 // CMFCLegacyAppView diagnostics
 
