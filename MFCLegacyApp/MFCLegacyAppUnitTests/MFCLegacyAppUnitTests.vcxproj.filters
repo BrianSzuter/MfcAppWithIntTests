@@ -26,7 +26,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Launcher.cpp">
+    <ClCompile Include="MFCLegacyAppViewTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

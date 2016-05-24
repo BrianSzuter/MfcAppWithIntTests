@@ -11,6 +11,7 @@
 #include "ChildFrm.h"
 #include "MFCLegacyAppDoc.h"
 #include "MFCLegacyAppView.h"
+#include "MFCLegacyStartup.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -157,6 +158,18 @@ int CMFCLegacyAppApp::ExitInstance()
 
 // CMFCLegacyAppApp message handlers
 
+// Point of Interest: Intercept normal MFC execution to execute our integration tests
+int CMFCLegacyAppApp::Run()
+{
+	if(!g_ExecuteTests)
+	{
+		// When not running a test, use the official MFC message loop
+		return __super::Run();
+	}
+
+	g_ExecuteTests();
+	return ExitInstance();
+}
 
 // CAboutDlg dialog used for App About
 
