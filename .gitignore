@@ -22,6 +22,10 @@ Debug/
 *.aps
 *.vc.db
 *.vc.vc.opendb
+*.vcxproj.user
+
+# Ignore WinMerge backup files
+*.bak
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/

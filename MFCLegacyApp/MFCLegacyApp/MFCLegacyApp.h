@@ -25,6 +25,8 @@ public:
 	virtual BOOL InitInstance();
 	virtual int ExitInstance();
 
+	int Run() override;
+
 // Implementation
 	afx_msg void OnAppAbout();
 	DECLARE_MESSAGE_MAP()
