@@ -12,4 +12,6 @@ One possible solution, which this little project demonstrates is possible, is to
 - Driving full application functionality from a different executable, including your integration / functional test frame of choice.
 - The ability to override and drive the message loop in a test environment to functionally drive MFC from an API level.
 
+Search the solution for "Point of Interest" to see how this application differs from a basic new MFC application.
+
 Please note that this is a work in progress.
