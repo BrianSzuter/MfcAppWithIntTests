@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCLegacyApp", "MFCLegacyApp\MFCLegacyApp.vcxproj", "{A6AC551F-5731-439F-927D-F77CC4BD3347}"
 EndProject
@@ -10,6 +10,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCLegacyAppUnitTests", "MFCLegacyAppUnitTests\MFCLegacyAppUnitTests.vcxproj", "{271B7CB7-B0B6-4C8D-BAC2-C2F98D766BFD}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCLegacyAppIntTests", "MFCLegacyAppIntTests\MFCLegacyAppIntTests.vcxproj", "{125DC7C1-65D8-4084-BD35-B6AA9EA24202}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{627F2F49-65EF-4697-9797-741EE1337F2F}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
